@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: 1.4em;
+    gap: 10px;
+    
+    margin: 10px;
+    border-radius: 4px;
+   
+    animation: entrar 2s ease-out;
+}
+
+
+@keyframes entrar{
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.icon{
+    color: var(--destaque);
+    transition:  background-color 0.5s , color 0.5s ;
+}
+.icon:active{
+    background-color: var(--destaque-inverso);
+    color: var(--destaque);
+}
