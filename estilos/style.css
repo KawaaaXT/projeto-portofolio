@@ -39,22 +39,22 @@ body{
 
 main{
   display: grid;
-  grid-template-columns: 1fr 90vw 1fr;
+  grid-template-columns: auto 90vw auto;
   gap: 13px;
 
   margin-top: 10px;
   
 }
+#ficha, #detalhes{
+  grid-column: 2;
+}
 #ficha{
     background-color: var(--fundo-card);
     padding: 10px;
     border-radius: 7px;
-    grid-column: 2;
+   
 }
 
-#detalhes{
-  grid-column: 2;
-}
 h2,p{
   animation: entrar 2s ease-out forwards;
 }

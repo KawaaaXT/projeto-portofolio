@@ -7,7 +7,7 @@
     margin-top: 10px;
 }
 
-#project-contet{
+#project-content{
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
@@ -51,6 +51,7 @@
 }
  details{
     color: var(--destaque);
+    text-align: center;
     
  }
  details[open]{

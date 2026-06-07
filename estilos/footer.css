@@ -3,8 +3,10 @@
 footer{
     background-color: var(--destaque);
     color: var(--texto-inverso);
-    padding: 15px;
+    padding: 9px;
     border-radius: 5px;
+    font-size: 0.9em;
+
 
     text-align: center;
 
