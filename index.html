@@ -5,37 +5,15 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <script src="https://kit.fontawesome.com/7af547d23a.js" crossorigin="anonymous"></script>
     <title>Portfólio Kauã Pereira</title>
 </head>
 <body>
     <header>
-        <nav id="menu">
-            <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-house"></i></a>
-                </li>
-
-                <li>
-                    <a href="#"><i class="fa-solid fa-brain"></i></a>
-                </li>
-
-                <li>
-                    <a href="#"><i class="fa-solid fa-user-graduate"></i></a>
-                </li>
-
-                <li>
-                    <a href="#"><i class="fa-solid fa-film"></i></a>
-                </li>
-
-                <li>
-                    <a href="#"><i class="fa-solid fa-moon"></i></a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
+        
     <main>
+        
         <section id="ficha">
 
             <img src="imagens/imagem-perfil-kaua.jpeg" alt="Kaua Pereira Foto Perfil" class="foto">
@@ -53,6 +31,88 @@
         </section>
 
         <section id="detalhes">
+            <article id="skills">
+                 <h2><i class="fa-solid fa-brain"></i> Minhas Skills</h2>
+
+            <div id="skills-content">
+                <div id="skills-content">
+                      <!-- HTML -->
+                    <div class="item">
+                     <div class="infor">
+                         <span class="nome">
+                          <i class="fa-solid fa-code"></i> HTML5
+                        </span>
+
+                       <span class="porcentagem">
+                           80%
+                      </span>
+                    </div>
+
+                  <div class="barra">
+                    <div class="progresso" style="width: 80%;"></div>
+                     </div>
+                </div> <!-- FIM HTML -->
+
+                      <!-- CSS -->
+                <div class="item">
+                    <div class="infor">
+                       <span class="nome">
+                        <i class="fa-solid fa-code"></i> CSS3
+                      </span>
+
+                     <span class="porcentagem">
+                        80%
+                     </span>
+                    </div>
+
+                    <div class="barra">
+                      <div class="progresso" style="width: 80%;"></div>
+                   </div>
+               </div>  <!-- FIM CSS -->
+
+                  <!-- JavaScript -->
+                <div class="item">
+                 <div class="infor">
+                      <span class="nome">
+                        <i class="fa-solid fa-code"></i> JavaScript
+                      </span>
+
+                     <span class="porcentagem">
+                         70%
+                    </span>
+                </div>
+
+                  <div class="barra">
+                      <div class="progresso" style="width: 70%;"></div>
+                  </div> <!-- fim JavaScript -->
+               </div> 
+
+                 <!--COMUNICAÇÃO-->
+             <div class="item">
+                <div class="infor">
+                    <span class="nome">
+                      <i class="fa-solid fa-comments"></i> Comunicação
+                    </span>
+
+                     <span class="porcentagem">
+                       90%
+                     </span>
+                </div>
+
+                   <div class="barra">
+                       <div class="progresso" style="width: 90%;"></div>
+                  </div>
+             </div> <!--Fim Comunicação-->
+
+            </div>
+
+            </article> <!--Fim Skills-->
+
+
+            <article id="projetos">
+                <h2><i class="fa-solid fa-film"></i> Projetos</h2>
+
+            </article> <!--Fim Projeto-->
 
         </section>
 
@@ -62,6 +122,19 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+
+     <script>
+        function clickMenu(){
+            if (mnburg.style.display == 'block') {
+                mnburg.style.display = 'none'
+
+            } 
+            else {
+                mnburg.style.display = 'block'
+
+            }
+        }
+    </script>
     
 </body>
 </html>

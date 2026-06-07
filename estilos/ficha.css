@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
 
-#ficha{
-    background-color: var(--fundo-card);
-    padding: 10px;
-    border-radius: 7px;
-    grid-column: 2;
-}
+
 
 
 img{
@@ -22,11 +17,21 @@ img{
     margin: auto ;
     margin-bottom: 10px;
 
-  opacity: 0;
-  transform: translateY(40px);
-  animation: aparecer 1.5s ease forwards;
+    opacity: 0;
+  
+    
+    transform: translateY(40px);
+    animation: aparecer 1.5s ease forwards;
 }
-
+img:hover{
+   
+    cursor: pointer;
+}
+ 
+img:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
 @keyframes aparecer {
   to{
     opacity: 1;

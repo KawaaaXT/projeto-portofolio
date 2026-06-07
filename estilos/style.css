@@ -5,6 +5,8 @@
 @import url("footer.css");
 @import url("ficha.css");
 @import url("social.css");
+@import url("skills.css");
+@import url("projetos.css");
 @import url("responsividade.css");
 
 *{
@@ -41,6 +43,28 @@ main{
   margin-top: 10px;
   
 }
+#ficha{
+    background-color: var(--fundo-card);
+    padding: 10px;
+    border-radius: 7px;
+    grid-column: 2;
+}
+
+#detalhes{
+  grid-column: 2;
+}
+h2,p{
+  animation: entrar 2s ease-out forwards;
+}
+
+@keyframes entrar{
+  from{
+    transform: translateX(-200px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
 
 h1{
   color: var(--destaque);
@@ -48,15 +72,11 @@ h1{
   text-shadow: 0px 0px 3px #023be669;
   margin: 15px 0px;
   text-align: center;
-
+  
   opacity: 0;
-  transform: translateY(40px);
-  animation: aparecer 1.5s ease forwards;
-
-}
-p{
-  text-indent: 4px;
-  text-align: center;
+  transform: translateY(30px) ;
+  animation: aparecer 2s ease-out forwards;
+  
 }
 
 @keyframes aparecer {
@@ -64,6 +84,21 @@ p{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+h2{
+  color: var(--destaque);
+  font-size: 1.4em;
+  text-shadow: 0px 0px 2px #023be669 ;
+  margin-bottom: 10px;
+}
+
+
+
+p{
+  text-indent: 4px;
+  text-align: center;
 }
 
 
