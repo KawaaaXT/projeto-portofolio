@@ -15,7 +15,13 @@
     
 }
 .infor, .nome, .porcentagem, .barra, .progresso{
+    
     animation: entrar 2s ease-out;
+    transition: transform 0.4s ease;
+}
+.infor, .nome, .porcentagem, .barra, .progresso:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 @keyframes entrar{
     from{

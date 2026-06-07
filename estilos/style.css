@@ -21,7 +21,9 @@
   --texto-inverso: #ffffff  ;
   --destaque: #01258F  ;
   --destaque-inverso: #023BE6  ;
+  --destaque-inverso2: #063faaa0 ;
   --fundo-card: #ffffff ;
+
 
 }
 
@@ -73,6 +75,7 @@ h1{
   margin: 15px 0px;
   text-align: center;
   
+  
   opacity: 0;
   transform: translateY(30px) ;
   animation: aparecer 2s ease-out forwards;
@@ -92,6 +95,14 @@ h2{
   font-size: 1.4em;
   text-shadow: 0px 0px 2px #023be669 ;
   margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+h3{
+  color: var(--destaque);
+  font-size: 0.9em;
+  text-align: center;
+ 
 }
 
 
@@ -99,6 +110,7 @@ h2{
 p{
   text-indent: 4px;
   text-align: center;
+  font-weight: 500;
 }
 
 

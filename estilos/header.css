@@ -23,11 +23,12 @@ a{
     padding: 12px 15px;
     border-radius: 5px;
 
-    cursor: pointer;
+    
     transition: background-color 0.5s, color 0.5s ;
 }
-a:active{
+a:hover{
+    cursor: pointer;
     text-decoration: underline;
-    background-color: var(--destaque-inverso);
-    color: var(--destaque);
+    background-color: var(--destaque-inverso2);
+    color: var(--destaque-inverso);
 }

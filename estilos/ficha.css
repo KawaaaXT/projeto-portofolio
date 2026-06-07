@@ -3,9 +3,8 @@
 
 
 
-
-img{
-    width: 200px;
+.foto{
+   width: 200px;
     aspect-ratio: 1/1;
     object-fit: cover;
     overflow: hidden;
@@ -23,12 +22,10 @@ img{
     transform: translateY(40px);
     animation: aparecer 1.5s ease forwards;
 }
-img:hover{
-   
-    cursor: pointer;
-}
+
+
  
-img:hover{
+.foto:hover{
     transform: scale(1.03);
     cursor: pointer;
 }

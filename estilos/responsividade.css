@@ -1,7 +1,45 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+
+     
+
     #skills-content{
         grid-template-columns: 1fr 1fr;
     }
+    
+    h2{
+        text-align: center;
+    }
+
+    .projeto{
+        
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+    .infor{
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+    .foto-projeto{
+        aspect-ratio: 1/1;
+        max-width: 20%;
+        max-height: 320px;
+        
+    }
+    .periodo, .titulo-line{
+        padding: 4px;
+        font-weight: bold;
+    }
+    
+    .titulo-line{
+        font-size: 0.9em;
+    }
+    details{
+       font-size: 0.9em;
+    }
+
+
 }

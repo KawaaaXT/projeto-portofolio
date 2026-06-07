@@ -26,9 +26,6 @@
 
 .icon{
     color: var(--destaque);
-    transition:  background-color 0.5s , color 0.5s ;
+    
 }
-.icon:active{
-    background-color: var(--destaque-inverso);
-    color: var(--destaque);
-}
+
