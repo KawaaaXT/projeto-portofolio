@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
+
+ 
 @import url("header.css");
-@import url("cards.css");
 @import url("footer.css");
 @import url("ficha.css");
 @import url("social.css");
@@ -9,22 +10,43 @@
 @import url("projetos.css");
 @import url("responsividade.css");
 
+@font-face {
+    font-family: "Citadel" ;
+    src: url(../fonts/Citadel\ of\ Blackrose.ttf) format("truetype");
+    font-weight: normal;
+}
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  
 }
 
 :root {
   --fundo-principal: #faf8f4 ;
-  --texto: #000000  ;
+  --texto: #222222 ;
   --texto-inverso: #ffffff  ;
   --destaque: #01258F  ;
   --destaque-inverso: #023BE6  ;
   --destaque-inverso2: #063faaa0 ;
   --fundo-card: #ffffff ;
+  --color-portfolio: #EAEAEA ;
 
 
+}
+
+.escuro{
+  --fundo-principal: #181622;
+  --texto: #E5E1F0;
+  --texto-inverso: #FFFFFF;
+
+  --destaque: #6D28D9;
+  --destaque-inverso: #8B5CF6;
+  --destaque-inverso2: #8B5CF666;
+
+  --fundo-card: #242036;
+  --color-portfolio: #F8F7FF;
 }
 
 body{
@@ -35,14 +57,14 @@ body{
 
   background-color: var(--fundo-principal);
   color:  var(--texto);
+
+  transition: background-color 0.5s , color 0.5s ;
 }
 
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
   gap: 13px;
-
-  margin-top: 10px;
   
 }
 #ficha, #detalhes{
@@ -69,9 +91,9 @@ h2,p{
 }
 
 h1{
-  color: var(--destaque);
+  color: var(--destaque-inverso);
   font-size: 1.6em;
-  text-shadow: 0px 0px 3px #023be669;
+  
   margin: 15px 0px;
   text-align: center;
   
@@ -91,15 +113,16 @@ h1{
 
 
 h2{
-  color: var(--destaque);
+  color: var(--destaque-inverso);
   font-size: 1.4em;
-  text-shadow: 0px 0px 2px #023be669 ;
+  text-align: center;
+   
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
 h3{
-  color: var(--destaque);
+  color: var(--destaque-inverso);
   font-size: 0.9em;
   text-align: center;
  
@@ -108,7 +131,8 @@ h3{
 
 
 p{
-  text-indent: 4px;
+  
+  text-indent: 20px;
   text-align: center;
   font-weight: 500;
 }

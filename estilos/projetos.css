@@ -2,8 +2,7 @@
 
 #projetos{
     background-color: var(--fundo-card);
-    padding: 10px;
-
+   overflow: hidden;
     margin-top: 10px;
 }
 
@@ -11,6 +10,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
+    
 }
 .foto-projeto{
     width: 100%;
@@ -36,6 +36,7 @@
     
 }
 .titulo-line{
+    
     padding: 5px;
 
 }
@@ -50,16 +51,14 @@
 
 }
  details{
-    color: var(--destaque);
-    text-align: center;
-    
- }
- details[open]{
     color: var(--destaque-inverso);
-    
-    padding: 4px;
+    text-align: center;
     transition: transform 0.3s ease;
+    padding: 5px;
+    
  }
+ 
  details[open]:hover{
+   
     transform: scale(1.01);
  }

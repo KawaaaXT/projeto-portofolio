@@ -3,19 +3,26 @@
 #skills{
     background-color: var(--fundo-card);
     padding: 10px;
+   
+    
 }
 
 #skills-content{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    overflow: hidden;
+
+    transition: transform 0.4s ease ;
    
-    
-    
-    
+   
 }
+ #skills:hover, #skills-content:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 .infor, .nome, .porcentagem, .barra, .progresso{
-    
     animation: entrar 2s ease-out;
     transition: transform 0.4s ease;
 }
@@ -23,6 +30,7 @@
     transform: scale(1.03);
     cursor: pointer;
 }
+
 @keyframes entrar{
     from{
         transform: translateX(-200px);
@@ -38,7 +46,6 @@
     align-items: center;
     margin-bottom: 6px;
 
-    
 }
 
 .nome{
@@ -61,6 +68,7 @@
     height: 100%;
     background-color: var(--destaque-inverso);
 }
+
 
 
     

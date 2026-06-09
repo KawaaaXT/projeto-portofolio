@@ -2,49 +2,72 @@
 
 header{
     display: flex;
-    justify-content: flex-end;
-    align-content: center;
+    
     background-color: var(--destaque);
     color: var(--texto);
-    padding: 10px;
+    padding: 5px;
 
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
+nav{
+    display: none;
+}
+#burguer{
+    display: block;
+    margin: 10px 0px 0px auto;
+    cursor: pointer;
+    color: var(--color-portfolio);
+   
+}
+#burguer:hover{
+    background-color: var(--destaque-inverso);
 
-
+}
 ul{
    display: flex;
    gap: 10px;
    list-style: none;
+   flex-direction: column-reverse;
+   
 }
 a{ 
     text-decoration: none;
-    color: var(--texto-inverso);
     font-weight: 700;
     padding: 12px 15px;
     border-radius: 5px;
+    margin: 0px 0px 20px 0px;
+    color: var(--color-portfolio);
 
+}
+
+.titulo-name{
+    font-family: 'Citadel';
+    letter-spacing: 5px;
+    color: var(--color-portfolio);
     
+   
    
 }
 
 a:hover{
     cursor: pointer;
     text-decoration: underline;
-    background-color: var(--destaque-inverso2);
-    
-    
-    
+    background-color: var(--destaque);
 }
-a, .link{
-    transition: background-color 0.8s, color 0.8s ;
 
+.link{
+    transition: background-color 0.8s, color 0.8s ;
 }
+
 .link:hover{
     cursor: pointer;
     background-color: var(--fundo-principal);
     color: var(--destaque);
+}
+#botao-tema, .icon-nav{
+    
+   
 }
